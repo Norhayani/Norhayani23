@@ -2,65 +2,141 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Website Tema Laut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjelajah Samudera | Beranda</title>
     <style>
+        /* CSS DALAM SATU FILE */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            background: linear-gradient(to bottom, #0077be, #00c6ff);
-            color: white;
+            padding: 0;
+            background-color: #e0f7fa; /* Warna biru air sangat muda */
+            color: #01579b; /* Biru tua untuk teks */
+            line-height: 1.6;
         }
 
         header {
-            background-color: rgba(0,0,0,0.5);
-            padding: 15px;
+            background: linear-gradient(to right, #0277bd, #00acc1);
+            color: white;
+            padding: 3rem 1rem;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #01579b;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
             color: white;
-            margin: 0 10px;
             text-decoration: none;
+            margin: 0 20px;
             font-weight: bold;
+            transition: 0.3s;
         }
 
-        section {
-            padding: 20px;
-            text-align: center;
+        nav a:hover {
+            color: #80deea;
+            transform: translateY(-2px);
         }
 
-        .gallery img {
-            margin: 10px;
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .hero-img {
+            width: 100%;
+            height: auto;
             border-radius: 10px;
-            width: 300px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            border-left: 5px solid #00acc1;
+            padding-left: 15px;
+            color: #0277bd;
+        }
+
+        .welcome-text {
+            font-size: 1.1rem;
+            text-align: justify;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: rgba(0,0,0,0.5);
+            padding: 25px;
+            background: #01579b;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>🌊 Website Tema Laut</h1>
-    <nav>
-        <a href="home">Beranda</a>
-        <a href="biodata">Biodata</a>
-        <a href="#galeri">Galeri</a>
-        <a href="#video">Video</a>
-    </nav>
-</header>
+    <header>
+        <h1>Dunia Biru Samudera</h1>
+        <p>Mengeksplorasi Kedalaman, Menjaga Kehidupan</p>
+    </header>
 
-<section id="home">
-    <h2>Selamat Datang</h2>
-    <p>Website ini bertema laut yang menampilkan keindahan alam bawah laut.</p>
-</section>
-<footer>
-    <p>© 2026 Tema Laut</p>
-</footer>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="video.html">Video</a>
+    </nav>
+
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Pantai Biru" class="hero-img">
+        
+        <h2>Selamat Datang, Penjelajah!</h2>
+        <p class="welcome-text">
+            Website ini didedikasikan untuk keindahan laut kita. Laut bukan hanya sekumpulan air asin yang luas, 
+            melainkan jantung dari planet bumi yang memberikan oksigen dan kehidupan bagi jutaan makhluk hidup.
+        </p>
+        
+        <p class="welcome-text">
+            Melalui menu navigasi di atas, kamu dapat melihat profil pengembang di halaman <b>Biodata</b>, 
+            menikmati keindahan visual di halaman <b>Galeri</b>, atau menyaksikan ketenangan bawah laut di halaman <b>Video</b>.
+        </p>
+
+        <div style="background-color: #e1f5fe; padding: 15px; border-radius: 8px; margin-top: 20px;">
+            <small><i>"Kita hanya tahu sedikit tentang samudera, padahal ia adalah rahasia terbesar bumi."</i></small>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Projek Web Laut - Dibuat dengan penuh rasa cinta pada alam.</p>
+    </footer>
 
 </body>
 </html>
