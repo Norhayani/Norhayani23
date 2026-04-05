@@ -10,26 +10,58 @@
             background: linear-gradient(to bottom, #004e92, #000428);
             color: white;
         }
-        header { background-color: rgba(0,0,0,0.5); padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-        section { padding: 20px; text-align: center; }
+
+        header {
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
         .card {
             background: rgba(255,255,255,0.1);
             padding: 20px;
             border-radius: 15px;
             display: inline-block;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid white;
         }
     </style>
 </head>
 <body>
+
 <header>
-    <h1>Biodata</h1>
+    <h1>🌊 Biodata</h1>
     <nav>
-        <a href="index.html">Beranda</a>
+        <a href="#">Beranda</a>
+        <a href="#">Biodata</a>
     </nav>
 </header>
+
 <section>
     <div class="card">
+        <!-- Foto Profil -->
+        <img src="https://source.unsplash.com/150x150/?person" alt="Foto Profil" class="profile-img">
+
         <h2>Informasi Pribadi</h2>
         <p>Nama: [Isi Nama]</p>
         <p>Umur: [Isi Umur]</p>
@@ -37,5 +69,6 @@
         <p>Hobi: Menjelajah Laut</p>
     </div>
 </section>
+
 </body>
 </html>
